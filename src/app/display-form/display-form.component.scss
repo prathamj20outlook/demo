@@ -1,0 +1,35 @@
+.meeting-container {
+    max-width: 100%;
+    height: 300px; 
+    background-color: #f8f9fa; 
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+  }
+  
+  .meeting-container img {
+    width: 90%;
+    height: auto; 
+  }
+
+
+  
+  
+  h1, h2 {
+    color: #333; 
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%; /* Full width button */
+    margin-top: 20px; /* Spacing above button */
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+  }
+  
+  .list-group-item:hover {
+    background-color: #e9ecef; /* Highlight on hover */
+  }
+  

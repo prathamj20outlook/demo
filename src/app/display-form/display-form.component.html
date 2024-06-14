@@ -1,0 +1,26 @@
+
+<div class="row justify-content-center align-items-center">
+    <div class="col-md-3">
+      <ul class="list-group mb-4">
+        <li *ngFor="let meeting of linkData" class="list-group-item" (click)="displayMeetingData(meeting.name)">
+          Meeting ID: {{ meeting.name }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-7">
+      
+        <div class="meeting-container rounded p-4 row">
+          <div class="col-md-4 text-center">
+            <img [src]="selectedMeeting?.imageUrl" class="img-fluid m-2" alt="Meeting Image">
+          </div>
+          <div class="col-md-8">
+            <h1>Meeting ID: {{ selectedMeeting?.name }}</h1>
+            <h2>Agenda: {{ selectedMeeting?.agenda }}</h2>
+            <h2>Location: {{ selectedMeeting?.location }}</h2>
+            <button class="btn btn-primary mt-5" >Go to Another Page</button>
+          </div>
+        </div>
+     
+    </div>
+  </div>
+  
